@@ -1,0 +1,26 @@
+p {
+	background-color: green;
+	font-family: cursive;
+	display: inline;
+	border: 3px solid black;
+	font-size: 30px;
+	color:white;
+	padding:10px;
+}
+
+h2 {
+	border: 1px solid;
+	padding: 10px; 
+}
+
+.wumbo {
+	color: red;
+}
+
+#wumbo {
+	color: green;
+}
+
+.wumbo3 {
+	display:inline;
+}
