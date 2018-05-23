@@ -37,11 +37,18 @@ class Vehicle
 		puts 'mileage is now ' + @mileage.to_s
 		self
 	end
+	def go_to_work
+		@mileage += 30
+		@tire_health -= 5
+		@oil_health -= 3
+		puts 'you just went to work, mileage, tire_health and oil_health were affected'
+		puts "mileage is now #{mileage}, tire health is now #{tire_health}, oil health is now #{oil_health}"
+	end
 end
 
-# vehicle1 = Vehicle.new(25, 60000, 'used', 85, 100, 100)
+vehicle1 = Vehicle.new(25, 60000, 'used', 85, 100, 100)
 
-vehicle1.get_groceries().tire_rotation()
+vehicle1.get_groceries().tire_rotation().go_to_work()
 
 
 
